@@ -4,15 +4,393 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="I am a Frontend web developer who enjoys building user-friendly and pixel perfect web applications with clean code; fully responsive to all screen sizes. I am proficient in building web applications with ReactJS, HTML5, CSS3 and JavaScript."
+    />
+    <meta name="author" content="David Asaolu" />
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta
+      property="og:site_name"
+      content="David Asaolu - Frontend Web Developer & Content Creator"
+    />
+    <!-- website name -->
+    <meta property="og:site" content="https://dha-stix.github.io/portfolio" />
+    <!-- website link -->
+    <meta
+      property="og:title"
+      content="David Asaolu - Frontend Web Developer & Content Creator"
+    />
+    <!-- title shown in the actual shared post -->
+    <meta
+      property="og:description"
+      content="I am a Frontend web developer who enjoys building user-friendly and pixel perfect web applications with clean code; fully responsive to all screen sizes. I am proficient in building web applications with ReactJS, HTML5, CSS3 and JavaScript."
+    />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="./img/logo.jpg" />
+    <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="https://dha-stix.github.io/portfolio" />
+    <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- to have large image post format in Twitter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./img/logo.jpg" />
+    <link rel="shortcut icon" href="./img/logo.jpg" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>David Asaolu - Frontend Web Developer & Content Creator</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="http://google.com">google</a></li>
-        </ul>
-      </nav>
+    <nav class="nav">
+      <h1 class="logo">DA</h1>
+      <ul class="nav__links">
+        <li><a href="#top" class="nav__items">Home</a></li>
+        <li><a href="#about" class="nav__items">About</a></li>
+        <li><a href="#portfolio" class="nav__items">Portfolio</a></li>
+        <li><a href="#contact" class="nav__items">Contact Me</a></li>
+      </ul>
+      <i class="fas fa-bars"></i>
+    </nav>
+    <div id="hamburger__menu" class="no--display">
+      <ul id="hamburger__list">
+        <li><a href="#top" class="nav__items">Home</a></li>
+        <li><a href="#about" class="nav__items">About</a></li>
+        <li><a href="#portfolio" class="nav__items">Portfolio</a></li>
+        <li><a href="#contact" class="nav__items">Contact Me</a></li>
+      </ul>
+    </div>
+    <header class="header">
+      <div class="header__text">
+        <p class="location">Welcome, I'm</p>
+        <h1>David Asaolu</h1>
+        <h3>Frontend Web Developer & Content Creator</h3>
+        <a href="#contact" class="cta--btn"> HIRE ME </a>
+        <div class="header__links">
+          <a
+            href="https://www.linkedin.com/in/david-asaolu234/"
+            class="header__link"
+            target="_blank"
+            title="Follow Me on LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.github.com/dha-stix"
+            class="header__link"
+            target="_blank"
+            title="Dha-Stix GitHub"
+          >
+            <i class="fab fa-github-square"></i>
+          </a>
+          <a
+            href="https://www.twitter.com/Arshadayvid"
+            class="header__link"
+            target="_blank"
+            title="@Arshadayvid Twitter"
+          >
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <a
+            href="https://dev.to/arshadayvid"
+            class="header__link"
+            target="_blank"
+          >
+            <i class="fab fa-dev" title="@Arshadayvid Dev.to"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="header__img">
+        <img src="./img/logo.jpg" alt="David Asaolu" />
+      </div>
     </header>
+
+    <main>
+      <section class="about" id="about">
+        <h2>About Me</h2>
+        <div class="about__details">
+          <div class="about__img">
+            <img src="./img/logo.jpg" alt="David Asaolu" />
+          </div>
+          <div class="about__text">
+            <p>
+              I'm a <span class="about__style">Frontend web developer</span> who
+              enjoys building user-friendly and pixel perfect web applications
+              with clean code; fully responsive to all screen sizes.
+            </p>
+            <p>
+              I have 2years experience in building websites with ReactJS,
+              semantic HTML5 (Hypertext Markup Language), CSS3 (Cascading Style
+              Sheets) and JavaScript.
+            </p>
+            <p>
+              Aside programming, I am a creative and valuable team player with
+              good communication and listening skills.
+              <span class="about__style">I also create technical contents</span>
+              on the following tech stacks:
+            </p>
+            <div class="about__tools">
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="fab fa-bootstrap" title="Bootstrap"></i>
+              <i class="fab fa-sass" title="Sass Preprocessor"></i>
+              <i class="fab fa-js-square" title="JavaScript"></i>
+              <i class="fab fa-react" title="React.js"></i>
+              <i class="fab fa-git" title="Git"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio__section" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio__container">
+          <div class="portfolio" data-aos="zoom-in">
+            <div class="portfolio__image" id="netflix"></div>
+            <div class="portfolio__text">
+              <h3>Netflix Clone</h3>
+              <p>A movie website similar to Netflix</p>
+              <div class="portfolio__links">
+                <a
+                  href="https://netflix-clone-dha-stix.vercel.app/"
+                  target="_blank"
+                  >View Demo</a
+                >
+                <a
+                  href="https://github.com/dha-stix/netflix-clone"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio" data-aos="zoom-in">
+            <div class="portfolio__image" id="country_app"></div>
+            <div class="portfolio__text">
+              <h3>Countries Info App</h3>
+              <p>
+                A web application that shows the details of different countries
+                in the world
+              </p>
+              <div class="portfolio__links">
+                <a href="https://countries-app-one.vercel.app/" target="_blank"
+                  >View Demo</a
+                >
+                <a
+                  href="https://github.com/dha-stix/countries-app"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio" data-aos="zoom-in">
+            <div class="portfolio__image" id="tesla"></div>
+            <div class="portfolio__text">
+              <h3>Tesla Clone</h3>
+              <p>A landing page similar to Tesla website.</p>
+              <div class="portfolio__links">
+                <a href="https://tesla-clone-liart.vercel.app/" target="_blank"
+                  >View Demo</a
+                >
+                <a
+                  href="https://github.com/dha-stix/tesla-clone"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio" data-aos="zoom-in">
+            <div class="portfolio__image" id="fjorl"></div>
+            <div class="portfolio__text">
+              <h3>Fjorl Landing Page</h3>
+              <p>
+                A landing page for a productivity product that generates
+                conversion through email.
+              </p>
+              <div class="portfolio__links">
+                <a href="https://dha-stix.github.io/fjorl/" target="_blank"
+                  >View Demo</a
+                >
+                <a href="https://github.com/dha-stix/fjorl" target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio" data-aos="zoom-in">
+            <div class="portfolio__image" id="revise"></div>
+            <div class="portfolio__text">
+              <h3>Revise App</h3>
+              <p>
+                A revision application that aids students preparation for tests
+                and examinations
+              </p>
+              <div class="portfolio__links">
+                <a href="https://app-revise.vercel.app/learn" target="_blank"
+                  >View Demo</a
+                >
+                <a href="https://github.com/dha-stix/app-revise" target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio" data-aos="zoom-in">
+            <div class="portfolio__image" id="gitty"></div>
+            <div class="portfolio__text">
+              <h3>GitHub Web Application</h3>
+              <p>A web app that shows every user information on GitHub</p>
+              <div class="portfolio__links">
+                <a href="https://dha-stix.github.io/gitty/" target="_blank"
+                  >View Demo</a
+                >
+                <a href="https://github.com/dha-stix/gitty" target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio" data-aos="zoom-in">
+            <div class="portfolio__image" id="ecommerce"></div>
+            <div class="portfolio__text">
+              <h3>Ecommerce Website (Frontend)</h3>
+              <p>An ecommerce website demo</p>
+              <div class="portfolio__links">
+                <a href="https://goody-bags.netlify.app/" target="_blank"
+                  >View Demo</a
+                >
+                <a
+                  href="https://github.com/dha-stix/3pages-ecommerce"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio" data-aos="zoom-in">
+            <div class="portfolio__image" id="swift"></div>
+            <div class="portfolio__text">
+              <h3>Swift Broadband Company</h3>
+              <p>
+                A professional website for a Broadband company with interesting
+                animations.
+              </p>
+              <div class="portfolio__links">
+                <a href="https://dha-stix.github.io/smart/" target="_blank"
+                  >View Demo</a
+                >
+                <a href="https://github.com/dha-stix/smart" target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio" data-aos="zoom-in">
+            <div class="portfolio__image" id="zinc"></div>
+            <div class="portfolio__text">
+              <h3>Zinc Web Agency Website</h3>
+              <p>A professional website with cool SVG and animations.</p>
+              <div class="portfolio__links">
+                <a href="https://dha-stix.github.io/zinc/" target="_blank"
+                  >View Demo</a
+                >
+                <a href="https://github.com/dha-stix/zinc" target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hire__section" id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <div class="hireme">
+          <div class="hireme__text">
+            <h3>Have an interesting project in mind?</h3>
+            <p>Feel free to send me a message</p>
+          </div>
+          <form
+            action="https://formspree.io/f/xeqvejyd"
+            class="hireme__form"
+            method="POST"
+          >
+            <label for="email">Email Address</label>
+            <input type="email" name="email" required />
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" required />
+
+            <label for="message">Message</label>
+            <textarea name="message" cols="30" rows="10" required> </textarea>
+            <button>SEND MESSAGE</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>David Asaolu</h2>
+      <p>Frontend Web Developer & Content Creator</p>
+      <p id="copyright">&copy Copyright 2021</p>
+      <div class="footer_links">
+        <a
+          href="https://www.linkedin.com/in/david-asaolu234/"
+          class="footer__link"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://www.github.com/dha-stix"
+          class="footer__link"
+          target="_blank"
+        >
+          <i class="fab fa-github-square"></i>
+        </a>
+        <a
+          href="https://www.twitter.com/Arshadayvid"
+          class="footer__link"
+          target="_blank"
+        >
+          <i class="fab fa-twitter-square"></i>
+        </a>
+        <a
+          href="https://dev.to/arshadayvid"
+          class="footer__link"
+          target="_blank"
+        >
+          <i class="fab fa-dev"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
